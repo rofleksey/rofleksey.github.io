@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://rofleksey.github.com/posts/</loc>
+    <lastmod>2022-08-16T19:02:39+03:00</lastmod>
+  </url><url>
+    <loc>https://rofleksey.github.com/</loc>
+    <lastmod>2022-08-16T19:02:39+03:00</lastmod>
+  </url><url>
+    <loc>https://rofleksey.github.com/posts/first_post/</loc>
+    <lastmod>2022-08-16T19:02:39+03:00</lastmod>
+  </url><url>
+    <loc>https://rofleksey.github.com/categories/</loc>
+  </url><url>
+    <loc>https://rofleksey.github.com/search/</loc>
+  </url><url>
+    <loc>https://rofleksey.github.com/tags/</loc>
+  </url>
+</urlset>
