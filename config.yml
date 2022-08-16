@@ -4,7 +4,8 @@ defaultContentLanguage: ru
 paginate: 10
 title: Roflex
 theme: "PaperMod"
-disqusShortname: rofleksey
+
+disqusShortname: rofleksey-blog
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
