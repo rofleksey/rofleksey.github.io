@@ -1,0 +1,99 @@
+baseURL: https://rofleksey.github.com
+languageCode: ru-ru
+defaultContentLanguage: ru
+paginate: 10
+title: Roflex
+theme: "PaperMod"
+disqusShortname: rofleksey
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+  
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
+menu:
+  main:
+    - name: Поиск
+      url: search/
+      weight: 10
+    - name: Теги
+      url: tags/
+      weight: 10
+    - name: Шикимори
+      url: https://shikimori.one/rofleksey
+      weight: 15
+    - name: Anilist
+      url: https://anilist.co/user/rofleksey/
+      weight: 20
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Roflex
+  description: "Rofleksey blog"
+  keywords: [Blog, Portfolio]
+  author: roflex
+  images: ["logo.png"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark
+  disableThemeToggle: false
+
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  hideFooter: true
+  
+  label:
+    text: "Roflex"
+    icon: logo.png
+    iconHeight: 45
+    
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+  assets:
+    favicon: favicon.ico
+    favicon16x16: favicon-16x16.png
+    favicon32x32: favicon-32x32.png
+    apple_touch_icon: apple-touch-icon.png
+  
+  homeInfoParams:
+    Title: "Очередной блог про аниме"
+    Content: сижу, чето тут пишу
+    
+  socialIcons:
+    - name: shikimori
+      url: "https://shikimori.one/rofleksey"
+    - name: anilist
+      url: "https://anilist.co/user/rofleksey"
+    - name: github
+      url: "https://github.com/rofleksey"
+
+
