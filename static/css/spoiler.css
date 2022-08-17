@@ -1,0 +1,18 @@
+.spoiler {
+    cursor: pointer;
+}
+
+.spoiler--concealed {
+    background-image: url(/images/spoiler_bg.png);
+    background-size: auto min(100%,1.125rem);
+    border-radius: 0.5rem;
+}
+
+.spoiler__content {
+    opacity: 0.85;
+    transition: opacity 500ms ease;
+}
+
+.spoiler--concealed .spoiler__content {
+    opacity: 0;
+}

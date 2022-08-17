@@ -1,0 +1,17 @@
+{{- $audio_src := .Get "src" -}}
+{{- /* Find all files with filename (without suffix) matching "src" parameter. */ -}}
+{{- $audio_files := (.Page.Resources.Match (printf "%s*" $audio_src)) -}}
+
+{{- $audio_mp3 := "" -}}
+
+{{- with $audio_files -}}
+{{- range . -}}
+{{- if (in .MediaType.Suffixes "mp3") -}}
+{{- $audio_mp3 = . -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+
+<audio controls preload="metadata" {{ if (.Get "loop")}}loop {{ end }}>
+{{ with $audio_mp3 }}<source src="{{ .RelPermalink }}" type="audio/mp3">{{ end }}
+</audio>

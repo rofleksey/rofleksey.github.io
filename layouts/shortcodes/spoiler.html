@@ -1,0 +1,13 @@
+{{ if ne (.Get "block") "true" }}
+<span class="spoiler spoiler--concealed">
+    {{ if .Inner }}
+    <span class="spoiler__content">{{ .Inner | markdownify }}</span>
+    {{ end }}
+</span>
+{{ else }}
+<div class="spoiler spoiler--concealed">
+    {{ if .Inner }}
+    <div class="spoiler__content">{{ .Inner | markdownify }}</div>
+    {{ end }}
+</div>
+{{ end }}

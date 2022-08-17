@@ -46,7 +46,7 @@ params:
   images: ["logo.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: dark
-  disableThemeToggle: false
+  disableThemeToggle: true
 
   ShowReadingTime: false
   ShowShareButtons: false
@@ -90,7 +90,8 @@ params:
     Content: сижу, чето тут пишу
     
   socialIcons:
-    - name: shikimori
+    - title: shikimori
+      name: cv
       url: "https://shikimori.one/rofleksey"
     - name: anilist
       url: "https://anilist.co/user/rofleksey"
